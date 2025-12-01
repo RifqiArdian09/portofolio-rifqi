@@ -2,6 +2,7 @@
 
 import ScrollFloat from "@/components/ScrollFloat";
 import {
+  FiArrowUpRight,
   FiGithub,
   FiInstagram,
   FiLoader,
@@ -66,7 +67,7 @@ const KontakSection = ({ contacts, location, whatsappNumber }: KontakSectionProp
 
       <div className="mt-10 space-y-8">
         <div className="rounded-[40px] border border-white/10 bg-gradient-to-b from-white/5 via-black/40 to-black/70 p-6 shadow-[0_40px_90px_rgba(0,0,0,0.45)]">
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
             {contacts.map(({ label, sublabel, href, icon }) => {
               const IconComponent = iconMap[icon];
               return (
@@ -75,7 +76,7 @@ const KontakSection = ({ contacts, location, whatsappNumber }: KontakSectionProp
                   href={href}
                   target="_blank"
                   rel="noreferrer"
-                  className="group flex items-center justify-between rounded-[28px] border border-white/15 bg-black/30 px-6 py-5 text-left shadow-[0_25px_60px_rgba(0,0,0,0.45)] transition hover:border-white/40 hover:bg-black/50"
+                  className="group flex flex-col gap-4 rounded-[28px] border border-white/15 bg-black/30 px-6 py-5 text-left shadow-[0_25px_60px_rgba(0,0,0,0.45)] transition hover:border-white/40 hover:bg-black/50 sm:flex-row sm:items-center sm:justify-between"
                 >
                   <div className="flex items-center gap-4">
                     <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
@@ -86,7 +87,7 @@ const KontakSection = ({ contacts, location, whatsappNumber }: KontakSectionProp
                       <p className="text-sm text-white/60">{sublabel}</p>
                     </div>
                   </div>
-                  <span className="text-sm font-semibold text-purple-200/90 transition group-hover:text-white">Connect</span>
+                  <FiArrowUpRight className="text-lg text-purple-200/90 transition group-hover:text-white sm:self-center" />
                 </a>
               );
             })}
