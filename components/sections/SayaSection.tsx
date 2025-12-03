@@ -49,7 +49,7 @@ const SayaSection = ({ stacks, focusCards }: SayaSectionProps) => {
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-6 text-center md:text-left">
             <div>
-              <p className="text-sm uppercase tracking-[0.5em] text-sky-200/80 text-justify">Halo 👋</p>
+              <p className="text-sm uppercase tracking-[0.5em] text-sky-200/80 text-center md:text-left">Halo 👋</p>
               <h2 className="mt-3 text-3xl font-semibold leading-tight text-white">
                 Hai, saya Rifqi — Pelajar RPL dengan fokus pada pengembangan aplikasi modern dan berkualitas.
               </h2>
