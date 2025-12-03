@@ -44,7 +44,7 @@ const SiteNav = ({ navLinks }: SiteNavProps) => {
       <div className="mx-auto flex max-w-6xl items-center rounded-3xl border border-white/10 bg-[#050306]/90 px-5 py-4 shadow-[0_20px_60px_rgba(0,0,0,0.45)] lg:px-8">
         <div className="flex w-full items-center justify-between gap-3">
           <span className="text-lg font-semibold tracking-wide text-white">
-            Rifqi<span className="text-purple-400">Port.</span>
+            Rifqi<span className="text-sky-400">Port.</span>
           </span>
 
           <nav className="hidden flex-1 items-center justify-center gap-6 text-white/70 md:flex">
@@ -92,7 +92,7 @@ const SiteNav = ({ navLinks }: SiteNavProps) => {
         }`}
       >
         <div className="mt-4 flex flex-col gap-2 rounded-2xl border border-white/10 bg-[#050306]/90 p-4 text-white/80 shadow-lg">
-          <p className="text-center text-base font-semibold text-white">Rifqi<span className="text-purple-400">Port.</span></p>
+          <p className="text-center text-base font-semibold text-white">Rifqi<span className="text-sky-400">Port.</span></p>
           {navLinks.map(({ label, href }) => (
             <a
               key={label}

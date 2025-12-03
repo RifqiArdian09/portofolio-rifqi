@@ -2,13 +2,12 @@ import HeroSection from "@/components/sections/HeroSection";
 import KaryaSection from "@/components/sections/KaryaSection";
 import SayaSection from "@/components/sections/SayaSection";
 import SertifikatSection from "@/components/sections/SertifikatSection";
-import GalerySection from "@/components/sections/GalerySection";
 import KontakSection from "@/components/sections/KontakSection";
 import Footer from "@/components/Footer";
 import SiteNav, { type NavLink } from "@/components/SiteNav";
 import type { ProjectItem } from "@/components/ProjectGallery";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FiAward, FiBriefcase, FiHome, FiImage, FiMail, FiUser } from "react-icons/fi";
+import { FiAward, FiBriefcase, FiHome, FiMail, FiUser } from "react-icons/fi";
 
 const createMember = (username: string, displayName?: string) => ({
   name: displayName ?? username,
@@ -21,7 +20,6 @@ const navLinks: NavLink[] = [
   { label: "Saya", icon: "user", href: "#saya" },
   { label: "Karya", icon: "briefcase", href: "#karya" },
   { label: "Sertifikat", icon: "award", href: "#sertifikat" },
-  { label: "Galery", icon: "image", href: "#galery" },
   { label: "Kontak", icon: "mail", href: "#kontak" },
 ];
 
@@ -43,7 +41,7 @@ const socialLinks = [
   },
 ];
 
-const stacks = ["HTML", "CSS", "JavaScript", "PHP", "Laravel"];
+const stacks = ["HTML", "CSS", "JavaScript", "PHP", "Laravel","Tailwind","Git","Github"];
 
 const focusCards = [
   {
@@ -235,109 +233,46 @@ const projects: ProjectItem[] = [
 
 const certificates = [
   {
-    title: "Software Engineering Virtual Experience",
-    issuer: "Forage x Skilvul",
-    description:
-      "Simulasi kerja yang menekankan best practice rekayasa perangkat lunak, mulai dari analisis requirement sampai delivery.",
-    issuedAt: "2024",
-    badge: "Virtual Experience",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
-    credentialUrl: "https://www.linkedin.com/in/rifqi-ardian-0547b7388/details/certifications/",
-  },
-  {
-    title: "Belajar Backend Pemula",
+    title: "Belajar Dasar AI",
     issuer: "Dicoding",
-    description:
-      "Memahami dasar API, autentikasi, dan deployment menggunakan Node.js, serta praktik keamanan API modern.",
-    issuedAt: "2023",
-    badge: "Backend",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-    credentialUrl: "https://www.dicoding.com/certificates/MEPJGR4RNPYV",
+    description: "Memahami konsep fundamental kecerdasan buatan serta alur pengembangan solusi AI yang etis dan aman.",
+    issuedAt: "Feb 2024",
+    image: "/images/sertif/Belajar_Dasar_AI_page1.png",
   },
   {
-    title: "Google Cloud Essentials",
-    issuer: "Google Cloud Skill Boost",
-    description:
-      "Hands-on lab mengelola resource GCP, Cloud Run, dan Firestore untuk backend yang siap produksi.",
-    issuedAt: "2023",
-    badge: "Cloud",
-    image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?auto=format&fit=crop&w=800&q=80",
-    credentialUrl: "https://www.cloudskillsboost.google/public_profiles",
+    title: "Belajar Dasar Pemrograman",
+    issuer: "Dicoding",
+    description: "Belajar logika pemrograman, struktur data dasar, serta praktik clean code untuk web development.",
+    issuedAt: "Jan 2024",
+    image: "/images/sertif/Belajar_Dasar_Pemrograman_Web_page1.png",
   },
   {
-    title: "Fullstack Web Development",
-    issuer: "BuildWith Angga",
-    description:
-      "Kurikulum intensif React, Next.js, dan Laravel dengan penekanan pada UI modern dan integrasi API.",
-    issuedAt: "2022",
-    badge: "Bootcamp",
-    image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=800&q=80",
-  },
-];
-
-const galleryItems = [
-  {
-    id: "gal-1",
-    img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80",
-    url: "https://github.com/RifqiArdian09",
-    height: 620,
-  },
-  {
-    id: "gal-2",
-    img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-    url: "https://nimestream-six.vercel.app/",
-    height: 540,
-  },
-  {
-    id: "gal-3",
-    img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
-    url: "https://github.com/RifqiArdian09/rental-electronics",
-    height: 580,
-  },
-  {
-    id: "gal-4",
-    img: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80",
-    url: "https://github.com/RifqiArdian09/SubMaker",
-    height: 500,
-  },
-  {
-    id: "gal-5",
-    img: "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
-    url: "https://github.com/RifqiArdian09/Text-Image-Translator",
-    height: 620,
-  },
-  {
-    id: "gal-6",
-    img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
-    url: "https://github.com/RifqiArdian09/Project-BKK",
-    height: 560,
-  },
-  {
-    id: "gal-7",
-    img: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=900&q=80",
-    url: "https://github.com/RifqiArdian09/EssyCoff-Laravel",
-    height: 520,
-  },
-  {
-    id: "gal-8",
-    img: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80",
-    url: "https://github.com/RifqiArdian09/Celenganku",
-    height: 500,
+    title: "Penghargaan Atas Pembuatan Web W-Vote ",
+    issuer: "SMKN 1 KOTA BENGKULU",
+    description: "Penghargaan sekolah atas kontribusi dalam membangun aplikasi pemilihan OSIS modern berbasis web.",
+    issuedAt: "Nov 2023",
+    image: "/images/sertif/w-vote.png",
   },
 ];
 
 const contactMethods = [
   {
     label: "GitHub",
-    sublabel: "Connect now",
+    sublabel: "RifqiArdian09",
     href: "https://github.com/RifqiArdian09",
     icon: "github" as const,
   },
   {
     label: "Instagram",
-    sublabel: "Connect now",
+    sublabel: "@rifqiard._",
     href: "https://instagram.com/rifqiard._",
     icon: "instagram" as const,
+  },
+  {
+    label: "LinkedIn",
+    sublabel: "Rifqi Ardian",
+    href: "https://www.linkedin.com/in/rifqi-ardian-0547b7388/",
+    icon: "linkedin" as const,
   },
   {
     label: "Email",
@@ -354,8 +289,8 @@ export default function Home() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[#050306] text-white">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[-10%] top-[-10%] h-72 w-72 rounded-full bg-purple-600/30 blur-[140px]" />
-        <div className="absolute right-[-5%] top-1/3 h-80 w-80 rounded-full bg-indigo-500/30 blur-[160px]" />
+        <div className="absolute left-[-10%] top-[-10%] h-72 w-72 rounded-full bg-sky-500/30 blur-[140px]" />
+        <div className="absolute right-[-5%] top-1/3 h-80 w-80 rounded-full bg-blue-500/30 blur-[160px]" />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/60 to-transparent" />
       </div>
 
@@ -366,7 +301,6 @@ export default function Home() {
         <SayaSection stacks={stacks} focusCards={focusCards} />
         <KaryaSection projects={projects} />
         <SertifikatSection certificates={certificates} />
-        <GalerySection items={galleryItems} />
         <KontakSection contacts={contactMethods} location={contactLocation} whatsappNumber={whatsappNumber} />
         <Footer />
       </div>

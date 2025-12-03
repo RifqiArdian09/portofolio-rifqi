@@ -21,7 +21,7 @@ export default function TypewriterText({
   holdDuration = 1500,
   startDelay = 400,
   className,
-  caretClassName = "text-purple-300",
+  caretClassName = "text-sky-300",
 }: TypewriterTextProps) {
   const phraseList = useMemo(() => {
     if (phrases?.length) {

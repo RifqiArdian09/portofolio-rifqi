@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useCallback, useMemo } from 'react';
+import './ProfileCard.css';
 
 interface ProfileCardProps {
   avatarUrl: string;
@@ -20,7 +21,6 @@ interface ProfileCardProps {
   handle?: string;
   status?: string;
   contactText?: string;
-  contactHref?: string;
   showUserInfo?: boolean;
   onContactClick?: () => void;
 }
@@ -58,7 +58,6 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   handle = 'javicodes',
   status = 'Online',
   contactText = 'Contact',
-  contactHref,
   showUserInfo = true,
   onContactClick
 }) => {
@@ -328,16 +327,8 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   );
 
   const handleContactClick = useCallback(() => {
-    if (onContactClick) {
-      onContactClick();
-      return;
-    }
-
-    if (contactHref) {
-      const target = contactHref.startsWith('mailto:') ? '_self' : '_blank';
-      window.open(contactHref, target);
-    }
-  }, [contactHref, onContactClick]);
+    onContactClick?.();
+  }, [onContactClick]);
 
   return (
     <div ref={wrapRef} className={`pc-card-wrapper ${className}`.trim()} style={cardStyle}>

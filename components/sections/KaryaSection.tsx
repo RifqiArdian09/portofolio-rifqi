@@ -1,3 +1,4 @@
+import FadeUp from "@/components/FadeUp";
 import ProjectGallery from "@/components/ProjectGallery";
 import ScrollFloat from "@/components/ScrollFloat";
 import type { ProjectItem } from "@/components/ProjectGallery";
@@ -10,7 +11,7 @@ const KaryaSection = ({ projects }: KaryaSectionProps) => {
   return (
     <section id="karya" className="mt-24 space-y-8 text-white">
       <div className="space-y-4 text-center">
-        <p className="text-sm uppercase tracking-[0.5em] text-purple-200/80">Karya</p>
+        <p className="text-sm uppercase tracking-[0.5em] text-sky-200/80">Karya</p>
         <ScrollFloat containerClassName="flex justify-center" textClassName="text-center font-semibold text-white">
           Beberapa project yang saya banggakan.
         </ScrollFloat>
@@ -20,7 +21,9 @@ const KaryaSection = ({ projects }: KaryaSectionProps) => {
         </p>
       </div>
 
-      <ProjectGallery projects={projects} />
+      <FadeUp delay={0.1}>
+        <ProjectGallery projects={projects} />
+      </FadeUp>
     </section>
   );
 };

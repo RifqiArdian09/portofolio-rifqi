@@ -21,7 +21,7 @@ const Footer = () => {
     <footer className="mt-24 border-t border-white/10 bg-black/40 px-6 py-10 text-white/80">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
         <div className="space-y-3 text-center lg:text-left">
-          <p className="text-sm uppercase tracking-[0.5em] text-purple-200/80">Rifqi Ardian</p>
+          <p className="text-sm uppercase tracking-[0.5em] text-sky-200/80">Rifqi Ardian</p>
           <h3 className="text-2xl font-semibold text-white">Build. Learn. Share.</h3>
           <p className="text-sm text-white/60">Portofolio ini dibangun dengan Next.js, animasi kustom, dan fokus pada pengalaman manusiawi.</p>
         </div>
