@@ -21,9 +21,7 @@ const KaryaSection = ({ projects }: KaryaSectionProps) => {
         </p>
       </div>
 
-      <FadeUp delay={0.1}>
-        <ProjectGallery projects={projects} />
-      </FadeUp>
+      <ProjectGallery projects={projects} />
     </section>
   );
 };
