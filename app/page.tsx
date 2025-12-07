@@ -236,21 +236,18 @@ const certificates = [
     title: "Belajar Dasar AI",
     issuer: "Dicoding",
     description: "Memahami konsep fundamental kecerdasan buatan serta alur pengembangan solusi AI yang etis dan aman.",
-    issuedAt: "Feb 2024",
     image: "/images/sertif/Belajar_Dasar_AI_page1.png",
   },
   {
     title: "Belajar Dasar Pemrograman",
     issuer: "Dicoding",
     description: "Belajar logika pemrograman, struktur data dasar, serta praktik clean code untuk web development.",
-    issuedAt: "Jan 2024",
     image: "/images/sertif/Belajar_Dasar_Pemrograman_Web_page1.png",
   },
   {
     title: "Penghargaan Atas Pembuatan Web W-Vote ",
     issuer: "SMKN 1 KOTA BENGKULU",
     description: "Penghargaan sekolah atas kontribusi dalam membangun aplikasi pemilihan OSIS modern berbasis web.",
-    issuedAt: "Nov 2023",
     image: "/images/sertif/w-vote.png",
   },
 ];
