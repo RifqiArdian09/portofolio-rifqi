@@ -67,13 +67,12 @@
   aspect-ratio: 0.718;
   border-radius: var(--card-radius);
   position: relative;
-  background-blend-mode: color-dodge, normal, normal, normal;
-  animation: glow-bg 12s linear infinite;
-  box-shadow: rgba(0, 0, 0, 0.8) calc((var(--pointer-from-left) * 10px) - 3px)
-    calc((var(--pointer-from-top) * 20px) - 6px) 20px -5px;
+  background-blend-mode: normal;
+  animation: none;
+  box-shadow: none;
   transition: transform 1s ease;
   transform: translateZ(0) rotateX(0deg) rotateY(0deg);
-  background: rgba(0, 0, 0, 0.9);
+  background: transparent;
   backface-visibility: hidden;
   overflow: hidden;
 }
@@ -103,22 +102,13 @@
 .pc-inside {
   inset: 0;
   position: absolute;
-  background-image: var(--inner-gradient);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-image: none;
+  background-color: transparent;
   transform: none;
 }
 
 .pc-shine {
-  mask-image: var(--icon);
-  mask-mode: luminance;
-  mask-repeat: repeat;
-  mask-size: 150%;
-  mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
-  transition: filter 0.8s ease;
-  filter: brightness(0.66) contrast(1.33) saturate(0.33) opacity(0.5);
-  animation: holo-bg 18s linear infinite;
-  animation-play-state: running;
-  mix-blend-mode: color-dodge;
+  display: none;
 }
 
 .pc-shine,
@@ -131,37 +121,14 @@
   background: transparent;
   background-size: cover;
   background-position: center;
-  background-image:
-    repeating-linear-gradient(
-      0deg,
-      var(--sunpillar-clr-1) calc(var(--space) * 1),
-      var(--sunpillar-clr-2) calc(var(--space) * 2),
-      var(--sunpillar-clr-3) calc(var(--space) * 3),
-      var(--sunpillar-clr-4) calc(var(--space) * 4),
-      var(--sunpillar-clr-5) calc(var(--space) * 5),
-      var(--sunpillar-clr-6) calc(var(--space) * 6),
-      var(--sunpillar-clr-1) calc(var(--space) * 7)
-    ),
-    repeating-linear-gradient(
-      var(--angle),
-      #0e152e 0%,
-      hsl(180, 10%, 60%) 3.8%,
-      hsl(180, 29%, 66%) 4.5%,
-      hsl(180, 10%, 60%) 5.2%,
-      #0e152e 10%,
-      #0e152e 12%
-    ),
-    radial-gradient(
-      farthest-corner circle at var(--pointer-x) var(--pointer-y),
-      hsla(0, 0%, 0%, 0.1) 12%,
-      hsla(0, 0%, 0%, 0.15) 20%,
-      hsla(0, 0%, 0%, 0.25) 120%
-    );
+  background: none;
   background-position:
     0 var(--background-y),
     var(--background-x) var(--background-y),
     center;
-  background-blend-mode: color, hard-light;
+  background-blend-mode: none;
+  filter: none;
+  mix-blend-mode: none;
   background-size:
     500% 500%,
     300% 300%,
@@ -234,20 +201,11 @@
 }
 
 .pc-glare {
-  transform: translate3d(0, 0, 1.1px);
-  overflow: hidden;
-  background-image: radial-gradient(
-    farthest-corner circle at var(--pointer-x) var(--pointer-y),
-    hsl(248, 25%, 80%) 12%,
-    hsla(207, 40%, 30%, 0.8) 90%
-  );
-  mix-blend-mode: overlay;
-  filter: brightness(0.8) contrast(1.2);
-  z-index: 4;
+  display: none;
 }
 
 .pc-avatar-content {
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
   overflow: visible;
   transform: translateZ(2);
   backface-visibility: hidden;
@@ -383,11 +341,7 @@
   margin: 0;
   font-size: min(5svh, 3em);
   margin: 0;
-  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
-  background-size: 1em 1.5em;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: #000000;
 }
 
 .pc-details p {
@@ -398,11 +352,7 @@
   font-size: 16px;
   margin: 0 auto;
   width: min-content;
-  background-image: linear-gradient(to bottom, #ffffff, #e0e0ff);
-  background-size: 1em 1.5em;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: #000000;
 }
 
 @keyframes glow-bg {

@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 interface CertificateItem {
   title: string;
   issuer: string;
-  description: string;
   badge?: string;
   image: string;
   credentialUrl?: string;
@@ -99,7 +98,6 @@ const SertifikatSection = ({ certificates }: SertifikatSectionProps) => {
                     <p className="text-sm uppercase tracking-[0.4em] text-white/40">{certificate.issuer}</p>
                     <h3 className="mt-2 text-2xl font-semibold text-white">{certificate.title}</h3>
                   </div>
-                  <p className="text-sm text-white/70">{certificate.description}</p>
                   <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.4em] text-white/50">
                   </div>
                   {certificate.credentialUrl && (
@@ -153,7 +151,6 @@ const SertifikatSection = ({ certificates }: SertifikatSectionProps) => {
             <div className="space-y-1">
               <p className="text-sm uppercase tracking-[0.4em] text-white/50">{zoomedCertificate.issuer}</p>
               <h3 className="text-2xl font-semibold text-white">{zoomedCertificate.title}</h3>
-              <p className="text-sm text-white/70">{zoomedCertificate.description}</p>
             </div>
           </div>
         </div>

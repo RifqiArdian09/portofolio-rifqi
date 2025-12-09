@@ -235,32 +235,27 @@ const certificates = [
   {
     title: "Belajar Dasar AI",
     issuer: "Dicoding",
-    description: "Memahami konsep fundamental kecerdasan buatan serta alur pengembangan solusi AI yang etis dan aman.",
     image: "/images/sertif/Belajar_Dasar_AI_page1.png",
   },
   {
     title: "Belajar Dasar Pemrograman",
     issuer: "Dicoding",
-    description: "Belajar logika pemrograman, struktur data dasar, serta praktik clean code untuk web development.",
     image: "/images/sertif/Belajar_Dasar_Pemrograman_Web_page1.png",
   },
   {
     title: "Belajar Dasar Pemrograman Javascript",
     issuer: "Dicoding",
-    description: "Mempelajari dasar-dasar JavaScript, mulai dari sintaks, kontrol alur, hingga penerapan pada web modern.",
     image: "/images/sertif/belajar dasar pemrograman javascript.png",
   },
   {
     title: "Belajar Membuat Front-End Web Untuk Pemula",
     issuer: "Dicoding",
-    description: "Belajar menyusun tampilan web responsif menggunakan HTML, CSS, dan JavaScript dari nol.",
     image: "/images/sertif/belajar membuat front-end web untuk pemula.png",
   },
 
   {
     title: "Penghargaan Atas Pembuatan Web W-Vote ",
     issuer: "SMKN 1 KOTA BENGKULU",
-    description: "Penghargaan sekolah atas kontribusi dalam membangun aplikasi pemilihan OSIS modern berbasis web.",
     image: "/images/sertif/w-vote.png",
   },
 ];
