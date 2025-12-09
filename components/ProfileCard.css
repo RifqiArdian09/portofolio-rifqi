@@ -341,7 +341,7 @@
   margin: 0;
   font-size: min(5svh, 3em);
   margin: 0;
-  color: #000000;
+  color: #ffffff;
 }
 
 .pc-details p {
@@ -352,7 +352,7 @@
   font-size: 16px;
   margin: 0 auto;
   width: min-content;
-  color: #000000;
+  color: #ffffff;
 }
 
 @keyframes glow-bg {
