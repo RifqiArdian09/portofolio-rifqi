@@ -9,7 +9,6 @@ interface CertificateItem {
   title: string;
   issuer: string;
   description: string;
-  issuedAt: string;
   badge?: string;
   image: string;
   credentialUrl?: string;
@@ -102,7 +101,6 @@ const SertifikatSection = ({ certificates }: SertifikatSectionProps) => {
                   </div>
                   <p className="text-sm text-white/70">{certificate.description}</p>
                   <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.4em] text-white/50">
-                    <span>{certificate.issuedAt}</span>
                   </div>
                   {certificate.credentialUrl && (
                     <a
@@ -156,7 +154,6 @@ const SertifikatSection = ({ certificates }: SertifikatSectionProps) => {
               <p className="text-sm uppercase tracking-[0.4em] text-white/50">{zoomedCertificate.issuer}</p>
               <h3 className="text-2xl font-semibold text-white">{zoomedCertificate.title}</h3>
               <p className="text-sm text-white/70">{zoomedCertificate.description}</p>
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/40">{zoomedCertificate.issuedAt}</p>
             </div>
           </div>
         </div>
